@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="John Doe">
+    
+    
+    
+    
+    
+    
+    <title>Linux学习笔记 | Hexo</title>
+    <link href="http://example.com" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://example.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Hexo</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/%E5%B0%8F%E7%99%BD/">小白</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%E5%B0%8F%E7%99%BD-Linux/">小白 Linux</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://example.com">Hexo</a>
+        >
+        <span>Linux学习笔记</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%B0%8F%E7%99%BD-Linux/">小白 Linux</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2021-10-05
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2021-10-05
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%B0%8F%E7%99%BD-Linux/">小白 Linux</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h1 id="Linux基础命令学习笔记"><a href="#Linux基础命令学习笔记" class="headerlink" title="Linux基础命令学习笔记"></a>Linux基础命令学习笔记</h1><h2 id="前言：这是一个小白从零开始学习Linux的指令，其中包含个人的理解，如有错误还望指出。"><a href="#前言：这是一个小白从零开始学习Linux的指令，其中包含个人的理解，如有错误还望指出。" class="headerlink" title="前言：这是一个小白从零开始学习Linux的指令，其中包含个人的理解，如有错误还望指出。"></a>前言：这是一个小白从零开始学习Linux的指令，其中包含个人的理解，如有错误还望指出。</h2><h3 id="第一天："><a href="#第一天：" class="headerlink" title="第一天："></a>第一天：</h3><ol>
+<li><h3 id="cd-（Change-Directory）进入"><a href="#cd-（Change-Directory）进入" class="headerlink" title="cd （Change Directory）进入"></a>cd （Change Directory）进入</h3><p>头的命令是指进入目录，格式：cd+空格+进入的目录名。</p>
+<p>注：在各种计算机语言中，目录名的表示方法都是名字+/ （待考证）</p>
+</li>
+<li><h3 id="ls-（LiSt）查看"><a href="#ls-（LiSt）查看" class="headerlink" title="ls （LiSt）查看"></a>ls （LiSt）查看</h3><p>通过 ls 命令不仅可以查看 linux 文件夹包含的文件，而且可以查看文件权(包括目录、文件夹、文件权限)查看目录信息等等。</p>
+<p><strong>常用参数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ls -a 列出目录所有文件，包含以.开始的隐藏文件</span><br><span class="line">ls -A 列出除.及..的其它文件</span><br><span class="line">ls -r 反序排列</span><br><span class="line">ls -t 以文件修改时间排序</span><br><span class="line">ls -S 以文件大小排序</span><br><span class="line">ls -h 以易读大小显示</span><br><span class="line">ls -l 除了文件名之外，还将文件的权限、所有者、文件大小等信息详细列出来</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="pwd-（Print-Working-Directory）"><a href="#pwd-（Print-Working-Directory）" class="headerlink" title="pwd （Print Working Directory）"></a>pwd （Print Working Directory）</h3><p>头的命令是指查看当前工作目录，可加装升级为pwd -P查看软链接的实际路径。</p>
+</li>
+<li><h3 id="mkdir（MaKe-DIRectory）头指创建新的文件夹，目录。"><a href="#mkdir（MaKe-DIRectory）头指创建新的文件夹，目录。" class="headerlink" title="mkdir（MaKe DIRectory）头指创建新的文件夹，目录。"></a>mkdir（MaKe DIRectory）头指创建新的文件夹，目录。</h3></li>
+<li><h2 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h2><p>创建新文件</p>
+</li>
+<li><h2 id="vi或vim-编辑文件"><a href="#vi或vim-编辑文件" class="headerlink" title="vi或vim 编辑文件"></a>vi或vim 编辑文件</h2><p>【vi编辑器的3种模式】</p>
+<pre><code>基本上vi可以分为三种状态，分别是命令模式（command mode）、插入模式（Insert mode）和底行模式（last line mode），各模式的功能区分如下：
+</code></pre>
+<ol>
+<li>命令行模式command mode）<br>   控制屏幕光标的移动，字符、字或行的删除，查找，移动复制某区段及进入Insert mode下，或者到 last line mode。<br>   命令行模式下的常用命令：<br>   【1】控制光标移动：↑，↓，j<br>   【2】删除当前行：dd<br>   【3】查找：/字符<br>   【4】进入编辑模式：i o a<br>   【5】进入底行模式：:</li>
+<li>编辑模式（Insert mode）<br>   只有在Insert mode下，才可以做文字输入，按「ESC」键可回到命令行模式。<br>   编辑模式下常用命令：<br>   【1】ESC 退出编辑模式到命令行模式；</li>
+<li>底行模式（last line mode）<br>  将文件保存或退出vi，也可以设置编辑环境，如寻找字符串、列出行号……等。<br>  底行模式下常用命令：<br>  【1】退出编辑：   :q<br>  【2】强制退出：   :q!<br>  【3】保存并退出：  :wq</li>
+</ol>
+<p>打开文件</p>
+<p>命令：vi 文件名<br>示例：打开当前目录下的aa.txt文件     vi aa.txt 或者 vim aa.txt</p>
+<p>注意：使用vi编辑器打开文件后，并不能编辑，因为此时处于命令模式，点击键盘i/a/o进入编辑模式。</p>
+<p>编辑文件</p>
+<p>使用vi编辑器打开文件后点击按键：i ，a或者o即可进入编辑模式。</p>
+<p>i:在光标所在字符前开始插入<br>a:在光标所在字符后开始插入<br>o:在光标所在行的下面另起一新行插入</p>
+<p>保存或者取消编辑</p>
+<p>保存文件：</p>
+<p>第一步：ESC  进入命令行模式<br>第二步：:     进入底行模式<br>第三步：wq     保存并退出编辑</p>
+<p>取消编辑：</p>
+<p>第一步：ESC  进入命令行模式<br>第二步：:     进入底行模式<br>第三步：q!     撤销本次修改并退出编辑</p>
+</li>
+<li><h3 id="rm（-ReMove）删除，"><a href="#rm（-ReMove）删除，" class="headerlink" title="rm（ ReMove）删除，"></a>rm（ ReMove）删除，</h3><p><strong>常用参数</strong></p>
+<p>（1）删除任何 .log 文件，删除前逐一询问确认：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -i *.log</span><br></pre></td></tr></table></figure>
+
+<p>（2）删除 test 子目录及子目录中所有档案删除，并且不用一一确认：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf test</span><br></pre></td></tr></table></figure>
+
+<p>（3）删除以 -f 开头的文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -- -f*</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="mv（move）移动文件，同时有重命名、覆盖的作用"><a href="#mv（move）移动文件，同时有重命名、覆盖的作用" class="headerlink" title="mv（move）移动文件，同时有重命名、覆盖的作用"></a>mv（move）移动文件，同时有重命名、覆盖的作用</h3></li>
+</ol>
+<p>（1）将文件 test.log 重命名为 test1.txt</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv test.log test1.txt</span><br></pre></td></tr></table></figure>
+
+<p>（2）将文件 log1.txt,log2.txt,log3.txt 移动到根的 test3 目录中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv llog1.txt log2.txt log3.txt /test3</span><br></pre></td></tr></table></figure>
+
+<p>（3）将文件 file1 改名为 file2，如果 file2 已经存在，则询问是否覆盖</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv -i log1.txt log2.txt</span><br></pre></td></tr></table></figure>
+
+<p>（4）移动当前文件夹下的所有文件到上一级目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv * ../</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li><h2 id="cp-copy-复制"><a href="#cp-copy-复制" class="headerlink" title="cp (copy)复制"></a>cp (copy)复制</h2></li>
+</ol>
+<p><strong>常用参数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-i 提示</span><br><span class="line">-r 复制目录及目录内所有项目</span><br><span class="line">-a 复制的文件与原文件时间一样</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li><h2 id="df-Disk-Free"><a href="#df-Disk-Free" class="headerlink" title="df  (Disk Free)"></a>df  (Disk Free)</h2></li>
+</ol>
+<p>显示磁盘空间使用情况</p>
+<p><strong>常用参数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-a 全部文件系统列表</span><br><span class="line">-h 以方便阅读的方式显示信息</span><br><span class="line">-i 显示inode信息</span><br><span class="line">-k 区块为1024字节</span><br><span class="line">-l 只显示本地磁盘</span><br><span class="line">-T 列出文件系统类型</span><br></pre></td></tr></table></figure>
+
+<ol start="11">
+<li><h2 id="find-查找"><a href="#find-查找" class="headerlink" title="find  查找"></a>find  查找</h2></li>
+</ol>
+<p><strong>常用参数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">pathname: find命令所查找的目录路径。例如用.来表示当前目录，用/来表示系统根目录。</span><br><span class="line">-print： find命令将匹配的文件输出到标准输出。</span><br><span class="line">-exec： find命令对匹配的文件执行该参数所给出的shell命令。相应命令的形式为&#x27;command&#x27; &#123;  &#125; \;，注意&#123;   &#125;和\；之间的空格。</span><br><span class="line">-ok： 和-exec的作用相同，只不过以一种更为安全的模式来执行该参数所给出的shell命令，在执行每一个命令之前，都会给出提示，让用户来确定是否执行。</span><br><span class="line">-name 按照文件名查找文件</span><br><span class="line">-perm 按文件权限查找文件</span><br><span class="line">-user 按文件属主查找文件</span><br><span class="line">-group  按照文件所属的组来查找文件。</span><br><span class="line">-type  查找某一类型的文件，诸如：</span><br><span class="line">   b - 块设备文件</span><br><span class="line">   d - 目录</span><br><span class="line">   c - 字符设备文件</span><br><span class="line">   l - 符号链接文件</span><br><span class="line">   p - 管道文件</span><br><span class="line">   f - 普通文件</span><br><span class="line"></span><br><span class="line">-size n :[c] 查找文件长度为n块文件，带有c时表文件字节大小</span><br><span class="line">-amin n   查找系统中最后N分钟访问的文件</span><br><span class="line">-atime n  查找系统中最后n*24小时访问的文件</span><br><span class="line">-cmin n   查找系统中最后N分钟被改变文件状态的文件</span><br><span class="line">-ctime n  查找系统中最后n*24小时被改变文件状态的文件</span><br><span class="line">-mmin n   查找系统中最后N分钟被改变文件数据的文件</span><br><span class="line">-mtime n  查找系统中最后n*24小时被改变文件数据的文件</span><br><span class="line">(用减号-来限定更改时间在距今n日以内的文件，而用加号+来限定更改时间在距今n日以前的文件。 )</span><br><span class="line">-maxdepth n 最大查找目录深度</span><br><span class="line">-prune 选项来指出需要忽略的目录。在使用-prune选项时要当心，因为如果你同时使用了-depth选项，那么-prune选项就会被find命令忽略</span><br><span class="line">-newer 如果希望查找更改时间比某个文件新但比另一个文件旧的所有文件，可以使用-newer选项</span><br></pre></td></tr></table></figure>
+
+<ol start="12">
+<li><h2 id="查看：cat、more、less"><a href="#查看：cat、more、less" class="headerlink" title="查看：cat、more、less"></a>查看：cat、more、less</h2></li>
+</ol>
+<p>目标对象是各种具体文件的内容，三种方式各有不同点。</p>
+<p>(1) cat</p>
+<p>cat 主要有三大功能：</p>
+<p>&lt;1&gt;一次显示整个文件:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat filename</span><br></pre></td></tr></table></figure>
+
+<p>&lt;2&gt;从键盘创建一个文件:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; filename</span><br></pre></td></tr></table></figure>
+
+<p> 只能创建新文件，不能编辑已有文件。</p>
+<p>&lt;3&gt;将几个文件合并为一个文件:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file1 file2 &gt; file</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>-b 对非空输出行号</p>
+</li>
+<li><p>-n 输出所有行号</p>
+<p>(2) more</p>
+<p><strong>命令参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">+n      从笫 n 行开始显示</span><br><span class="line">-n       定义屏幕大小为n行</span><br><span class="line">+/pattern 在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示 </span><br><span class="line">-c       从顶部清屏，然后显示</span><br><span class="line">-d       提示“Press space to continue，’q’ to quit（按空格键继续，按q键退出）”，禁用响铃功能</span><br><span class="line">-l        忽略Ctrl+l（换页）字符</span><br><span class="line">-p       通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似</span><br><span class="line">-s       把连续的多个空行显示为一行</span><br><span class="line">-u       把文件内容中的下画线去掉</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用操作命令：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Enter    向下 n 行，需要定义。默认为 1 行</span><br><span class="line">Ctrl+F   向下滚动一屏</span><br><span class="line">空格键  向下滚动一屏</span><br><span class="line">Ctrl+B  返回上一屏</span><br><span class="line">=       输出当前行的行号</span><br><span class="line">:f     输出文件名和当前行的行号</span><br><span class="line">V      调用vi编辑器</span><br><span class="line">!命令   调用Shell，并执行命令</span><br><span class="line">q       退出more</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>(3) less</p>
+<p>less 与 more 类似，但使用 less 可以随意浏览文件，而 more 仅能向前移动，却不能向后移动，而且 less 在查看之前不会加载整个文件。</p>
+<p><strong>常用命令参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">-i  忽略搜索时的大小写</span><br><span class="line">-N  显示每行的行号</span><br><span class="line">-o  &lt;文件名&gt; 将less 输出的内容在指定文件中保存起来</span><br><span class="line">-s  显示连续空行为一行</span><br><span class="line">/字符串：向下搜索“字符串”的功能</span><br><span class="line">?字符串：向上搜索“字符串”的功能</span><br><span class="line">n：重复前一个搜索（与 / 或 ? 有关）</span><br><span class="line">N：反向重复前一个搜索（与 / 或 ? 有关）</span><br><span class="line">-x &lt;数字&gt; 将“tab”键显示为规定的数字空格</span><br><span class="line">b  向后翻一页</span><br><span class="line">d  向后翻半页</span><br><span class="line">h  显示帮助界面</span><br><span class="line">Q  退出less 命令</span><br><span class="line">u  向前滚动半页</span><br><span class="line">y  向前滚动一行</span><br><span class="line">空格键 滚动一行</span><br><span class="line">回车键 滚动一页</span><br><span class="line">[pagedown]： 向下翻动一页</span><br><span class="line">[pageup]：   向上翻动一页</span><br></pre></td></tr></table></figure>
+
+<ol start="13">
+<li><h2 id="which"><a href="#which" class="headerlink" title="which"></a>which</h2></li>
+</ol>
+<p>（<del>斯以为与find差不多，待尝试</del>）</p>
+<p>经Ubuntu实验，which用于查找命令是否存在及其路径（<del>差远了…..</del> 实践是检验真理的唯一标准）</p>
+<ol start="14">
+<li><h2 id="关机与重启"><a href="#关机与重启" class="headerlink" title="关机与重启"></a>关机与重启</h2></li>
+</ol>
+<p>关机<br>    shutdown -h now        立刻关机<br>    shutdown -h 5        5分钟后关机<br>    poweroff            立刻关机<br>重启<br>    shutdown -r now        立刻重启<br>    shutdown -r 5        5分钟后重启<br>    reboot                立刻重启</p>
+<h2 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h2><ol start="15">
+<li><h2 id="head"><a href="#head" class="headerlink" title="head"></a>head</h2></li>
+</ol>
+<p>head 用来显示档案的开头至标准输出中，默认 head 命令打印其相应文件的开头 10 行。</p>
+<p>(不是特别懂在说什么)</p>
+<ol start="16">
+<li><h2 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h2></li>
+</ol>
+<p>于显示指定文件末尾内容，不指定文件时，作为输入信息进行处理。常用查看日志文件。</p>
+<p>(同样不是很懂是干什么的)</p>
+<ol start="17">
+<li><h2 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h2></li>
+</ol>
+<p>同样是用来搜索，只能用于程序名的搜索，而且只搜索二进制文件（参数-b）、man说明文件（参数-m）和源代码文件（参数-s）。如果省略参数，则返回所有信息。whereis 及 locate 都是基于系统内建的数据库进行搜索，因此效率很高，而find则是遍历硬盘查找文件。(效率高)  </p>
+<p><strong>常用参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-b   定位可执行文件。</span><br><span class="line">-m   定位帮助文件。</span><br><span class="line">-s   定位源代码文件。</span><br><span class="line">-u   搜索默认路径下除可执行文件、源代码文件、帮助文件以外的其它文件。</span><br></pre></td></tr></table></figure>
+
+<ol start="18">
+<li><h2 id="locate"><a href="#locate" class="headerlink" title="locate"></a>locate</h2></li>
+</ol>
+<p>用于在数据库中搜索，使用前先使用updatedb命令，手动更新数据库，具体原理如下(还不是特别懂）</p>
+<blockquote>
+<p>ocate 通过搜寻系统内建文档数据库达到快速找到档案，数据库由 updatedb 程序来更新，updatedb 是由 cron daemon  周期性调用的。默认情况下 locate 命令在搜寻数据库时比由整个由硬盘资料来搜寻资料来得快，但较差劲的是 locate  所找到的档案若是最近才建立或 刚更名的，可能会找不到</p>
+</blockquote>
+<p>​       <strong>常用参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-l num（要显示的行数）</span><br><span class="line">-f   将特定的档案系统排除在外，如将proc排除在外</span><br><span class="line">-r   使用正则运算式做为寻找条件</span><br></pre></td></tr></table></figure>
+
+<ol start="19">
+<li><h2 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h2></li>
+</ol>
+<p>用于改变 linux 系统文件或目录的访问权限。用它控制文件或目录的访问权限。该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含数字的数字设定法。</p>
+<p>每一文件或目录的访问权限都有三组，每组用三位表示，分别为文件属主的读、写和执行权限；与属主同组的用户的读、写和执行权限；系统中其他用户的读、写和执行权限。可使用 ls -l test.txt 查找。</p>
+<p>以文件 log2012.log 为例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-rw-r--r-- 1 root root 296K 11-13 06:03 log2012.log</span><br></pre></td></tr></table></figure>
+
+<p>第一列共有 10  个位置，第一个字符指定了文件类型。在通常意义上，一个目录也是一个文件。如果第一个字符是横线，表示是一个非目录的文件。如果是  d，表示是一个目录。从第二个字符开始到第十个 9 个字符，3 个字符一组，分别表示了 3  组用户对文件或者目录的权限。权限字符用横线代表空许可，r 代表只读，w 代表写，x 代表可执行。</p>
+<p>常用参数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-c 当发生改变时，报告处理信息</span><br><span class="line">-R 处理指定目录以及其子目录下所有文件</span><br></pre></td></tr></table></figure>
+
+<p>权限范围：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">u ：目录或者文件的当前的用户</span><br><span class="line">g ：目录或者文件的当前的群组</span><br><span class="line">o ：除了目录或者文件的当前用户或群组之外的用户或者群组</span><br><span class="line">a ：所有的用户及群组</span><br></pre></td></tr></table></figure>
+
+<p>权限代号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">r ：读权限，用数字4表示</span><br><span class="line">w ：写权限，用数字2表示</span><br><span class="line">x ：执行权限，用数字1表示</span><br><span class="line">- ：删除权限，用数字0表示</span><br><span class="line">s ：特殊权限</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<p>（1）增加文件 t.log 所有用户可执行权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x t.log</span><br></pre></td></tr></table></figure>
+
+<p>（2）撤销原来所有的权限，然后使拥有者具有可读权限,并输出处理信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u=r t.log -c</span><br></pre></td></tr></table></figure>
+
+<p>（3）给 file 的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 751 t.log -c（或者：chmod u=rwx,g=rx,o=x t.log -c)</span><br></pre></td></tr></table></figure>
+
+<p>（4）将 test 目录及其子目录所有文件添加可读权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u+r,g+r,o+r -R text/ -c</span><br></pre></td></tr></table></figure>
+
+<ol start="20">
+<li><h2 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h2></li>
+</ol>
+<p>用来压缩和解压文件(待实验)</p>
+<p>tar 本身不具有压缩功能，只具有打包功能，有关压缩及解压是调用其它的功能来完成。</p>
+<p>弄清两个概念：打包和压缩。打包是指将一大堆文件或目录变成一个总的文件；压缩则是将一个大的文件通过一些压缩算法变成一个小文件</p>
+<p><strong>常用参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">-c 建立新的压缩文件</span><br><span class="line">-f 指定压缩文件</span><br><span class="line">-r 添加文件到已经压缩文件包中</span><br><span class="line">-u 添加改了和现有的文件到压缩包中</span><br><span class="line">-x 从压缩包中抽取文件</span><br><span class="line">-t 显示压缩文件中的内容</span><br><span class="line">-z 支持gzip压缩</span><br><span class="line">-j 支持bzip2压缩</span><br><span class="line">-Z 支持compress解压文件</span><br><span class="line">-v 显示操作过程</span><br></pre></td></tr></table></figure>
+
+<p>有关 gzip 及 bzip2 压缩:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">gzip 实例：压缩 gzip fileName .tar.gz 和.tgz  解压：gunzip filename.gz 或 gzip -d filename.gz</span><br><span class="line">          对应：tar zcvf filename.tar.gz     tar zxvf filename.tar.gz</span><br><span class="line"></span><br><span class="line">bz2实例：压缩 bzip2 -z filename .tar.bz2 解压：bunzip filename.bz2或bzip -d filename.bz2</span><br><span class="line">       对应：tar jcvf filename.tar.gz         解压：tar jxvf filename.tar.bz2</span><br></pre></td></tr></table></figure>
+
+<p>常用压缩后缀：-zcvf</p>
+<p>示例：打包并压缩/usr/tmp 下的所有文件 压缩后的压缩包指定名称为xxx.tar<br> tar -zcvf ab.tar aa.txt bb.txt </p>
+<p>常用解压后缀：-zxvf</p>
+<p>示例：将/usr/tmp 下的ab.tar解压到根目录/usr下<br> tar -xvf ab.tar -C /usr——C代表指定解压的位置</p>
+<ol start="21">
+<li><h2 id="chown"><a href="#chown" class="headerlink" title="chown"></a>chown</h2></li>
+</ol>
+<p>更改权限待实践)</p>
+<p>   chown 将指定文件的拥有者改为指定的用户或组，用户可以是用户名或者用户 ID；组可以是组名或者组 ID；文件是以空格分开的要改变权限的文件列表，支持通配符。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-c 显示更改的部分的信息</span><br><span class="line">-R 处理指定目录及子目录</span><br></pre></td></tr></table></figure>
+
+<p>   <strong>实例：</strong></p>
+<p>   （1）改变拥有者和群组 并显示改变信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -c mail:mail log2012.log</span><br></pre></td></tr></table></figure>
+
+<p>   （2）改变文件群组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -c :mail t.log</span><br></pre></td></tr></table></figure>
+
+<p>   （3）改变文件夹及子文件目录属主及属组为 mail</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -cR mail: test/</span><br></pre></td></tr></table></figure>
+
+<ol start="22">
+<li><h2 id="du"><a href="#du" class="headerlink" title="du"></a>du</h2></li>
+</ol>
+<p>​             du 命令也是查看使用空间的，但是与 df 命令不同的是 Linux du 命令是对文件和目录磁盘使用的空间的查看：</p>
+<p>命令格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du [选项] [文件]</span><br></pre></td></tr></table></figure>
+
+<p><strong>常用参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-a 显示目录中所有文件大小</span><br><span class="line">-k 以KB为单位显示文件大小</span><br><span class="line">-m 以MB为单位显示文件大小</span><br><span class="line">-g 以GB为单位显示文件大小</span><br><span class="line">-h 以易读方式显示文件大小</span><br><span class="line">-s 仅显示总计</span><br><span class="line">-c或--total  除了显示个别目录或文件的大小外，同时也显示所有目录或文件的总和</span><br></pre></td></tr></table></figure>
+
+<ol start="23">
+<li><h2 id="date"><a href="#date" class="headerlink" title="date"></a>date</h2><p>显示或设定系统的日期与时间。</p>
+<p>命令参数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-d&lt;字符串&gt; 　显示字符串所指的日期与时间。字符串前后必须加上双引号。</span><br><span class="line">-s&lt;字符串&gt; 　根据字符串来设置日期与时间。字符串前后必须加上双引号。</span><br><span class="line">-u 　显示GMT。</span><br><span class="line">%H 小时(00-23)</span><br><span class="line">%I 小时(00-12)</span><br><span class="line">%M 分钟(以00-59来表示)</span><br><span class="line">%s 总秒数。起算时间为1970-01-01 00:00:00 UTC。</span><br><span class="line">%S 秒(以本地的惯用法来表示)</span><br><span class="line">%a 星期的缩写。</span><br><span class="line">%A 星期的完整名称。</span><br><span class="line">%d 日期(以01-31来表示)。</span><br><span class="line">%D 日期(含年月日)。</span><br><span class="line">%m 月份(以01-12来表示)。</span><br><span class="line">%y 年份(以00-99来表示)。</span><br><span class="line">%Y 年份(以四位数来表示)。</span><br></pre></td></tr></table></figure></li>
+<li><h2 id="ps-Processes-Status-查看所有正在运行的进程"><a href="#ps-Processes-Status-查看所有正在运行的进程" class="headerlink" title="ps (Processes Status) 查看所有正在运行的进程"></a>ps (Processes Status) 查看所有正在运行的进程</h2><p>ps(process status)，用来查看当前运行的进程状态，一次性查看，如果需要动态连续结果使用 top</p>
+<p>linux上进程有5种状态:</p>
+<ul>
+<li>\1. 运行(正在运行或在运行队列中等待)</li>
+<li>\2. 中断(休眠中, 受阻, 在等待某个条件的形成或接受到信号)</li>
+<li>\3. 不可中断(收到信号不唤醒和不可运行, 进程必须等待直到有中断发生)</li>
+<li>\4. 僵死(进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放)</li>
+<li>\5. 停止(进程收到SIGSTOP, SIGSTP, SIGTIN, SIGTOU信号后停止运行运行)</li>
+</ul>
+<p>ps 工具标识进程的5种状态码:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">D 不可中断 uninterruptible sleep (usually IO)</span><br><span class="line">R 运行 runnable (on run queue)</span><br><span class="line">S 中断 sleeping</span><br><span class="line">T 停止 traced or stopped</span><br><span class="line">Z 僵死 a defunct (”zombie”) process</span><br></pre></td></tr></table></figure>
+
+<p><strong>命令参数：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-A 显示所有进程</span><br><span class="line">a 显示所有进程</span><br><span class="line">-a 显示同一终端下所有进程</span><br><span class="line">c 显示进程真实名称</span><br><span class="line">e 显示环境变量</span><br><span class="line">f 显示进程间的关系</span><br><span class="line">r 显示当前终端运行的进程</span><br><span class="line">-aux 显示所有包含其它使用的进程</span><br></pre></td></tr></table></figure>
+
+<p>常用：ps -ef</p>
+</li>
+<li><h2 id="kill-结束进程"><a href="#kill-结束进程" class="headerlink" title="kill  结束进程"></a>kill  结束进程</h2><p>kill pid 或者 kill -9 pid(强制杀死进程)      pid:进程号</p>
+</li>
+<li><h2 id="free"><a href="#free" class="headerlink" title="free"></a>free</h2><p>显示系统内存使用情况，包括物理内存、交互区内存(swap)和内核缓冲区内存。</p>
+<hr>
+<p>基本完结</p>
+</li>
+</ol>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            John Doe
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/">我的第一篇博客（实验机）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/02/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/02/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/">我的第一篇博客（实验机）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/%E5%B0%8F%E7%99%BD/" style="font-size: 14.566158098224417px;" class="tag-cloud-link">小白</a>
+    
+    <a href="/tags/%E5%B0%8F%E7%99%BD-Linux/" style="font-size: 19.830692721627223px;" class="tag-cloud-link">小白 Linux</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 John Doe Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
+</html>
