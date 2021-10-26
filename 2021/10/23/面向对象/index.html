@@ -10,7 +10,7 @@
     
     
     
-    <title>我的第一篇博客（实验机） | Hexo</title>
+    <title>面向对象 | Hexo</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -180,13 +180,13 @@
         <i class="fa fa-home"></i>
         <a href="http://example.com">Hexo</a>
         >
-        <span>我的第一篇博客（实验机）</span>
+        <span>面向对象</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/">我的第一篇博客（实验机）</a>
+                <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -194,12 +194,12 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%B0%8F%E7%99%BD/">小白</a>
+                <a href="/tags/php-%E5%AD%A6%E4%B9%A0/">php 学习</a>
                 
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2021-10-03
+                <i class="fa fa-calendar"></i> 2021-10-23
             </span>
             
         </div>
@@ -209,17 +209,17 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/">我的第一篇博客（实验机）</a>
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2021-10-03
+                <i class="fa fa-calendar"></i> 2021-10-23
             </p>
             <p>
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%B0%8F%E7%99%BD/">小白</a>
+                <a href="/tags/php-%E5%AD%A6%E4%B9%A0/">php 学习</a>
                 
                 
                 
@@ -227,49 +227,69 @@
         </center>
     </div>
     <div class="content-article">
-        <h1 id="实验产物"><a href="#实验产物" class="headerlink" title="实验产物"></a>实验产物</h1><p><strong>测试</strong></p>
-<p>测试</p>
-<p><em>测试</em></p>
-<p><em><strong>测试</strong></em></p>
-<p><del>这不是</del>测试</p>
-<hr>
-<blockquote>
-<p>这是引用的测试</p>
-<blockquote>
-<p>引用中的引用</p>
-<hr>
-</blockquote>
-</blockquote>
-<p><img src="C:\Users\UTseven\Pictures\壁纸\QQ图片20210823204250.jpg"测试"" alt="测试用图"></p>
-<hr>
-<p><a target="_blank" rel="noopener" href="http://baidu.com/">markdown语法</a></p>
-<hr>
-<p>*测试</p>
-<ol>
-<li>测试</li>
-<li>测试</li>
-<li>测试</li>
+        <h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><p>[TOC]</p>
+<h2 id="1-基础理解"><a href="#1-基础理解" class="headerlink" title="1. 基础理解"></a>1. 基础理解</h2><p>面向对象不是一种只针对于php的方法，而是一种运用于多种语言中的方法，将原本单向执行的面向过程变为将各个执行环节分配给具体的对象，将代码模块化，使代码的读、写、维护更符合自然人的思考模式，更加方便。</p>
+<h2 id="2-类"><a href="#2-类" class="headerlink" title="2. 类"></a>2. 类</h2><p>是定义对象的最外层（同时是基础分支）用于包裹属性、方法、常量，具有对象们都需要的共性。</p>
+<p>使用 <code>class 类名&#123;内部需要的属性、方法、常量&#125; </code> 进行定义。</p>
+<p>如果类需要针对自身的数据操作，则使用范围解析操作符<code>类名::访问对象;</code></p>
+<p><strong>self</strong> ：是一种在类的内部用来代替类名的关键字，其效果与$this类似，在类内部访问静态成员。（意义在于方便维护）</p>
+<h2 id="3-对象"><a href="#3-对象" class="headerlink" title="3.对象"></a>3.对象</h2><p>是实际使用时实现功能的具体单元，将类中的内容进行使用，化抽象为具体的主体，这一过程被称为实例化，对象也被称为实例。</p>
+<p>使用 <code>$变量名=new 类名();</code> 的形式创建对象并赋给变量以便使用（可无限new出新对象）。</p>
+<p>通过 <code>$被赋的变量-&gt;类中的属性/方法;</code> 来使用类中的内容（调用时不要加$）</p>
+<p><strong>$this</strong> :是类内部自带的对象，因此可以访问类内部所有的属性、方法而不受修饰限定符的限制，起连接桥梁的作用</p>
+<h2 id="4-类成员"><a href="#4-类成员" class="headerlink" title="4. 类成员"></a>4. 类成员</h2><p>指类中的内容结构</p>
+<h3 id="1-属性"><a href="#1-属性" class="headerlink" title="(1)属性"></a>(1)属性</h3><p>是在类中创建的变量，也被称为成员变量</p>
+<p>使用 <code>public/protected/private $属性名=&quot;赋予的值&quot;</code> 来进行创建</p>
+<p>public/protected/private 是访问修饰限定符，用于控制内容被访问的位置</p>
+<p>public 共有，可以在任意的位置访问</p>
+<p>protected 受保护，只能在类的内部访问，使用时需要<code>$this</code>起桥梁作用，本质是为了<em>继承</em>而出现的，可以被继承</p>
+<p>private 私有，只能在”当前”类中访问，不可继承</p>
+<h3 id="2-方法"><a href="#2-方法" class="headerlink" title="(2) 方法"></a>(2) 方法</h3><p>是在类中创建的函数，也被称为成员函数</p>
+<p>使用<code>public/protected/private function 方法名()&#123;&#125;</code> 来进行创建</p>
+<p>问修饰限定符的作用与属性类似</p>
+<h3 id="3-类常量"><a href="#3-类常量" class="headerlink" title="(3)类常量"></a>(3)类常量</h3><p> 是在类中创建的常量，由类访问，并不会在new对象时复制到对象的内存空间中（所以对象无法直接调用）</p>
+<p>使用 <code>public const 常量名=常量值;</code> 来进行创建</p>
+<p>如果要使用类常量则需要范围解析操作符  <code>类名::常量名;</code></p>
+<h2 id="5-基本过程"><a href="#5-基本过程" class="headerlink" title="5.基本过程"></a>5.基本过程</h2><ol>
+<li>将代码编译入内存(代码段)中</li>
+<li>因为类是结构，不会执行，所以执行对象的相关操作</li>
+<li>new的对象前往内存(代码段)中寻找对应的类，把类中的所有属性复制到内存(堆区)中，并留下一个路径指针；被赋值的变量在内存(栈区)中有一路径指针指向内存(堆区)中的对象</li>
+<li>当被赋值的变量使用类中的方法时，会沿着路径进入内存(代码段)中寻找方法，同时生成 <code>$this</code></li>
 </ol>
-<p>一.嵌套测试</p>
-<p>   测试</p>
-<hr>
-<p>表格测试</p>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头2</th>
-<th>表头3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-<p>结尾：markdown真好用</p>
+<p>指向内存(堆区)中的对象，所以 <code>$this</code> 与被赋值的变量同时指向同一内存地址，代表同一对象，所以 <code>$this</code> 起到了桥梁的作用</p>
+<p><img src="C:\Users\UTseven\AppData\Roaming\Typora\typora-user-images\image-20211024212604586.png" alt="image-20211024212604586"></p>
+<p>​                                                              （图来自B站黑马程序员）</p>
+<h2 id="6-构造方法-析构方法"><a href="#6-构造方法-析构方法" class="headerlink" title="6. 构造方法/析构方法"></a>6. 构造方法/析构方法</h2><p>这两种方法属于PHP中的魔术方法（可以在满足条件时自动使用，输出的值随条件改变而改变）</p>
+<p>属性需要初始化的情况是某个属性需要是统一的值，此时就需要构造方法<code>__construct()&#123;&#125;</code> 来进行初始化，此方法可以在new出新变量时就被执行</p>
+<p>使用方法为：<code>public function __construct($形式参数)&#123;$this-&gt;需要初始化的属性名=$形式参数;&#125;</code>    <code>new 类名(需要传入的值);</code></p>
+<p>当需要消除某个对象并执行某个方法时，可以使用魔术方法<code>__destruct()&#123;&#125;</code> ，此魔术方法会在该对象被消除时自动执行（<del>垂死挣扎</del>)</p>
+<h2 id="7-静态成员"><a href="#7-静态成员" class="headerlink" title="7.静态成员"></a>7.静态成员</h2><p>静态成员是针对类的成员，包含静态属性、静态方法。与类常量相似，不会在new对象时复制到对象的内存空间中（所以对象无法直接调用）</p>
+<p>定义时在访问修饰限定符后加上<code>static</code> 即可</p>
+<p>使用时直接由类来使用范围解析操作符<code>类名::访问对象</code> 访问对应的静态属性、静态方法。</p>
+<p>由于不会占用新的内存空间，所以静态的效率更高。</p>
+<p>在类的内部进行调用时，使用<code>类名::访问对象;</code>进行调用。</p>
+<p><strong>self</strong> ：是一种在类的内部用来代替类名的关键字，其效果与$this类似，在类内部访问静态成员。（意义在于方便维护）</p>
+<h2 id="8-类的加载"><a href="#8-类的加载" class="headerlink" title="8.类的加载"></a>8.类的加载</h2><p>在正常的使用中，为了方便管理，会将一个类单独分入一个文件夹内，需要使用时再在对应的PHP文件中加载对应的类。有两种加载模式</p>
+<p><strong>手动加载</strong>：直接通过文件包含引入对应文件，其前可以使用if判定文件是否存在<code>if(!class_exists(类名))&#123;include_once&#39;文件名&#39;&#125;</code></p>
+<p>这种方法的缺点是过于繁琐且占用资源</p>
+<p><strong>自动加载</strong>：是指按规定好的路径去寻找对应的文件实现包含。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function 函数名($classname)&#123;</span><br><span class="line">   $a_file=&#x27;对应目录/&#x27; . $classname . &#x27;.php&#x27;;     //寻找路径与文件名格式</span><br><span class="line">   if(file_exists($a_file))&#123;</span><br><span class="line">   include_once $a_file;</span><br><span class="line">   &#125;else&#123;  </span><br><span class="line">     $b_file=&#x27;对应目录/&#x27; . $classname . &#x27;.php&#x27;;</span><br><span class="line">     if(file_exists($b_file))&#123;</span><br><span class="line">          include_once $b_file;</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br><span class="line">spl_autoload_register(&#x27;函数名&#x27;);      //注册函数名</span><br></pre></td></tr></table></figure>
+
+<p>此功能原先由魔术方法<code>__autoload</code> 来实现，但随着版本更新，改为了使用函数<code>spl_autoload_register();</code> 来进行注册设置好的加载函数。</p>
+<h2 id="9-三大特性"><a href="#9-三大特性" class="headerlink" title="9. 三大特性"></a>9. 三大特性</h2><h3 id="1-封装"><a href="#1-封装" class="headerlink" title="1.封装"></a>1.封装</h3><p>指类将其的成员包裹后在外部调用时不清楚运行的过程</p>
+<h3 id="2-继承"><a href="#2-继承" class="headerlink" title="2.继承"></a>2.继承</h3><p>是指子类通过继承父类后可以调用父类的成员，包括静态成员（除私有<code>private</code>成员外）同时也可以增加新的成员</p>
+<p>通过<code>class 子类名 extends 父类名&#123;&#125; </code>实现继承，受保护的成员使用时同样需要<code>$this</code>的桥梁作用。</p>
+<h4 id="1-重写"><a href="#1-重写" class="headerlink" title="(1)重写"></a>(1)重写</h4><p>是指在子类中定义与父类同名的属性或方法，在new子类时，便会调用子类中重写的同名新成员。如果需要同时使用父类的同名方法使用关键字<code>parent::父类的同名方法;</code>进行调用（不能访问普通属性）PS：1.重写的成员的访问修饰限定不能高于父类。2.重写的方法必须与父类保持参数一致。</p>
+<p><strong>特点</strong>：php中只允许单继承（其他语言或许可以多继承），如有需要也只能采用套娃的形式（链式继承）</p>
+<h4 id="2-静态延迟绑定"><a href="#2-静态延迟绑定" class="headerlink" title="(2)静态延迟绑定"></a>(2)静态延迟绑定</h4><p>在静态成员在被继承时，就算重写了父类的静态属性，但在调用其静态方法时，由于父类中的<code>self</code>仍然是代表父类，所以输出的结果仍是父类的。但如果父类中使用静态延迟绑定的关键字<code>static</code>来代替<code>self</code>，则可以延迟关键字与类的绑定至在外部调用时，此时子类输出的结果便是子类重写后的。</p>
+<h4 id="3-最终的final"><a href="#3-最终的final" class="headerlink" title="(3)最终的final"></a>(3)最终的final</h4><p><code>final class 类名&#123;&#125;</code>关键字的作用有两种，在类头中使该类无法被继承；在方法头中使该方法无法被重写。</p>
+<h4 id="4-抽象abstract"><a href="#4-抽象abstract" class="headerlink" title="(4)抽象abstract"></a>(4)抽象abstract</h4><p><code>abstract class  类名&#123;&#125;</code>关键字会将修饰的类、方法抽象，抽象类无法实例化，只能被继承；抽象方法只能在抽象类中存在。在抽象类被继承时，子类<em>必须</em>实现父抽象类中的抽象方法（除非子类也是一个抽象类）。该关键字的意义是规范化类的继承，使子类实现统一的结构。ps：抽象方法后的括号一定要加分号。</p>
+<h4 id="5-接口"><a href="#5-接口" class="headerlink" title="(5)接口"></a>(5)接口</h4><p>接口与抽象相似，也是用来规定统一子类格式的一种结构，<em>但接口不是类</em>（自然不能new）。接口使用<code>interface 接口名&#123;接口常量;共有抽象方法;&#125;</code>（方法后的括号一定要加分号）来进行设置，限定类使用<code>class 类名 implements 接口名&#123;&#125; </code>进行限定，接口中的方法都是抽象的。接口也可以被继承给其他的接口，并且接口可以多继承。</p>
+<h4 id="6-trait"><a href="#6-trait" class="headerlink" title="(6)trait"></a>(6)trait</h4><p>一种类似类的结构，但不能被实例化，是用来实现代码复用的，为其他的类提供公共的代码（方法），拥有属性与方法。创建为<code>trait 名字&#123;&#125;</code>，使用时在类中直接使用<code>use 对应的名字;</code>即可，相当于将trait中的方法直接复制进入当前类中，并且<em>可以多引用</em> 。ps：出现同名方法的情况时，优先级的顺序为本类的&gt;trait&gt;父类的，若是两个trait的方法重名，则在类中使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">use t1,t2&#123;</span><br><span class="line">t1::同名方法 insteadof t2;      //肯定t1的方法</span><br><span class="line">t2::同名方法 as 改名;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>回避同名。</p>
+<h3 id="3-多态"><a href="#3-多态" class="headerlink" title="3.多态"></a>3.多态</h3><p>此功能在PHP中暂时难以实现，待扩展学习。</p>
 
     </div>
 </article>
@@ -428,17 +448,17 @@
 
                 
                 <li>
-                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -446,15 +466,15 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/" style="font-size: 14.942437575045098px;" class="tag-cloud-link">小白 学习 php</a>
+    <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/" style="font-size: 13.755304732989234px;" class="tag-cloud-link">小白 学习 php</a>
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD-Linux-%E5%AD%A6%E4%B9%A0/" style="font-size: 19.20973066234627px;" class="tag-cloud-link">小白 Linux 学习</a>
+    <a href="/tags/%E5%B0%8F%E7%99%BD-Linux-%E5%AD%A6%E4%B9%A0/" style="font-size: 10.307852757396441px;" class="tag-cloud-link">小白 Linux 学习</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%B0%8F%E7%99%BD/" style="font-size: 13.859246297308397px;" class="tag-cloud-link">学习 小白</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%B0%8F%E7%99%BD/" style="font-size: 8.045336189008566px;" class="tag-cloud-link">学习 小白</a>
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD/" style="font-size: 13.276747543096008px;" class="tag-cloud-link">小白</a>
+    <a href="/tags/%E5%B0%8F%E7%99%BD/" style="font-size: 9.238371139320076px;" class="tag-cloud-link">小白</a>
     
-    <a href="/tags/php-%E5%AD%A6%E4%B9%A0/" style="font-size: 18.86826217758967px;" class="tag-cloud-link">php 学习</a>
+    <a href="/tags/php-%E5%AD%A6%E4%B9%A0/" style="font-size: 11.999490230188348px;" class="tag-cloud-link">php 学习</a>
     
 </div>
                 

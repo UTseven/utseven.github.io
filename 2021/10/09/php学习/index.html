@@ -136,17 +136,21 @@
                         
                         
                         <li>
+                            <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/">小白 学习 php</a>
+                        </li>
+                        
+                        <li>
                             <a href="/tags/%E5%B0%8F%E7%99%BD-Linux-%E5%AD%A6%E4%B9%A0/">小白 Linux 学习</a>
                         </li>
                         
                         <li>
-                            <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0/">小白 学习</a>
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%B0%8F%E7%99%BD/">学习 小白</a>
                         </li>
+                        
                         
                         <li>
-                            <a href="/tags/%E5%B0%8F%E7%99%BD/">小白</a>
+                            <a href="/tags">...</a>
                         </li>
-                        
                         
                         
                     </ul>
@@ -190,7 +194,7 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0/">小白 学习</a>
+                <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/">小白 学习 php</a>
                 
             </span>
             
@@ -215,7 +219,7 @@
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0/">小白 学习</a>
+                <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/">小白 学习 php</a>
                 
                 
                 
@@ -225,22 +229,23 @@
     <div class="content-article">
         <h1 id="PHP学习笔记"><a href="#PHP学习笔记" class="headerlink" title="PHP学习笔记"></a>PHP学习笔记</h1><p>php官方使用手册：<a target="_blank" rel="noopener" href="https://www.php.net/manual/zh/">PHP: PHP 手册 - Manual</a></p>
 <p>学习参考：<a target="_blank" rel="noopener" href="https://www.runoob.com/php/php-tutorial.html">PHP 教程 | 菜鸟教程 (runoob.com)</a></p>
-<ol>
-<li><h2 id="起始输入"><a href="#起始输入" class="headerlink" title="起始输入"></a>起始输入</h2><p>php的起始包括符为</p>
+<p><a target="_blank" rel="noopener" href="https://www.houdunren.com/">https://www.houdunren.com</a></p>
+<p>[TOC]</p>
+<h2 id="1-起始输入"><a href="#1-起始输入" class="headerlink" title="1.起始输入"></a>1.起始输入</h2><p>php的起始包括符为</p>
 <?php
 
-?></li>
-<li><h2 id="echo-指令"><a href="#echo-指令" class="headerlink" title="echo 指令"></a>echo 指令</h2><p>输入、输出 指令，echo+空格+’输入内容’ 进行输入</p>
+?>
+
+<h2 id="2-echo-指令"><a href="#2-echo-指令" class="headerlink" title="2.echo 指令"></a>2.echo 指令</h2><p>输入、输出 指令，echo+空格+’输入内容’ 进行输入</p>
 <p>例如  <code>echo &#39;Hollw Word&#39; ;</code></p>
 <p>如果想要一次输入多组内容则需要用 空格+.+空格 的形式连接内容</p>
 <p>例如 <code>echo &#39;Hollw Word&#39; . &quot;$x&quot;;</code></p>
 <p><code>echo &quot;&lt;br&gt;&quot;</code>可完成换行的操作</p>
-</li>
-<li><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>注释是对于程序的解释，对于 <em>复杂</em> 程序的日后维护、升级、迭代有重要的意义。</p>
+<h2 id="3-注释"><a href="#3-注释" class="headerlink" title="3.注释"></a>3.注释</h2><p>注释是对于程序的解释，对于 <em>复杂</em> 程序的日后维护、升级、迭代有重要的意义。</p>
 <p>单行注释可为 // +内容或 #+内容</p>
 <p>多行注释为 /* +内容+ */</p>
-</li>
-<li><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>与代数类似，可以给 PHP 变量赋予某个值（x=5）或者表达式（z=x+y）。</p>
+<h2 id="4-变量"><a href="#4-变量" class="headerlink" title="4.变量"></a>4.变量</h2><p>用于储存数据</p>
+<p>与代数类似，可以给 PHP 变量赋予某个值（x=5）或者表达式（z=x+y）。</p>
 <p>变量可以是很短的名称（如 x 和 y）或者更具描述性的名称（如 age、carname、totalvolume）。</p>
 <p>PHP 变量规则：</p>
 <ul>
@@ -263,50 +268,53 @@
 <p>&lt;8&gt;在 PHP 函数内部声明的变量是局部变量，仅能在函数内部访问</p>
 <p>&lt;9&gt;在不同函数中使用相同的变量名称，因为这些函数内定义的变量名是局部变量，只作用于该函数内</p>
 <p><strong>超级全局变量</strong>:待补充</p>
-</li>
-<li><h2 id="函数转换进制"><a href="#函数转换进制" class="headerlink" title="函数转换进制"></a>函数转换进制</h2><p>八转十 <code>octdec(八进制)</code> 十六转十 <code>hexdec (&#39;十六进制&#39;)</code></p>
+<h2 id="5-函数"><a href="#5-函数" class="headerlink" title="5.函数"></a>5.函数</h2><p>是一种语法<strong>结构</strong>（不会自动运行，需要调用）</p>
+<p>函数是通过调用函数来执行的。</p>
+<p>你可以在页面的任何位置调用函数。</p>
+<p><strong>创建语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function functionName($形式参数) </span><br><span class="line">&#123;</span><br><span class="line">    // 要执行的代码</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>PHP 函数准则：</p>
+<ul>
+<li>函数的名称应该提示出它的功能</li>
+<li>函数名称以字母或下划线开头（不能以数字开头）</li>
+</ul>
+<p><strong>添加参数</strong></p>
+<p>为了给函数添加更多的功能，我们可以添加参数，参数类似变量。</p>
+<p>函数中存在两种参数，形式参数与实际参数，使得全局变量引入函数内部。</p>
+<p><em>形式参数</em>：在创建函数名称后面的一个括号内指定。形参可以有多个，使用”,”分隔，同时可以给定初始值，当调用函数且无实际参数时将自动执行形式参数的值。</p>
+<p><em>实际参数</em>：在调用函数时在函数名称后面的一个括号内指定。 在调用参数时，系统会将实参传入形参，执行函数</p>
+<p><strong>返回值</strong></p>
+<p>如需让函数返回一个值，请使用 return 语句。return会结束当前函数。</p>
+<p>实例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function add($x,$y)</span><br><span class="line">&#123;</span><br><span class="line">    $total=$x+$y;</span><br><span class="line">    return $total;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">echo &quot;1 + 16 = &quot; . add(1,16);</span><br><span class="line">?&gt;</span><br><span class="line">输出</span><br><span class="line">1 + 16 = 17</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数转换进制"><a href="#函数转换进制" class="headerlink" title="函数转换进制"></a>函数转换进制</h3><p>八转十 <code>octdec(八进制)</code> 十六转十 <code>hexdec (&#39;十六进制&#39;)</code></p>
 <p>更多函数使用手册来查询。</p>
-</li>
-<li><h2 id="Boolean-类型"><a href="#Boolean-类型" class="headerlink" title="Boolean 类型"></a>Boolean 类型</h2><p>是指在PHP中的一种规定好的判断类型，正确与错误，很简单但很实用</p>
-</li>
-<li><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串变量用于存储并处理文本</p>
+<h3 id="Boolean-类型"><a href="#Boolean-类型" class="headerlink" title="Boolean 类型"></a>Boolean 类型</h3><p>是指在PHP中的一种规定好的判断类型，正确与错误，很简单但很实用</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串变量用于存储并处理文本</p>
 <p>在创建字符串之后，我们就可以对它进行操作了。您可以直接在函数中使用字符串，或者把它存储在变量中</p>
 <p>字符串转义：通过在已有某种意义的字符前加上 <code>\</code>使字符正常输出</p>
-</li>
-<li><h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>(1)<code>echo &#39;&lt;hr/&gt;&#39;;</code></p>
-<p>(2)在输出字符中加入<code>\t</code>效果类似空格</p>
-<p>(3)在输出字符中加入<code>\n</code>可实现在在输出一段字符中换行</p>
-</li>
-<li><h2 id="字符串定界"><a href="#字符串定界" class="headerlink" title="字符串定界"></a>字符串定界</h2><p>定义变量后在等号后加 <code>&lt;&lt;&lt;&#39;任意字符&#39;</code>另起一行可以输入任意字符在变量中，结束后另起一行输入刚刚的’任意字符’做结尾即可定界；</p>
-</li>
-<li><h2 id="字符串函数strlen"><a href="#字符串函数strlen" class="headerlink" title="字符串函数strlen"></a>字符串函数strlen</h2><p>用于测定一个变量的长度；如：<code>echo strlen($被测变量)</code></p>
+<h3 id="字符串定界"><a href="#字符串定界" class="headerlink" title="字符串定界"></a>字符串定界</h3><p>定义变量后在等号后加 <code>&lt;&lt;&lt;&#39;任意字符&#39;</code>另起一行可以输入任意字符在变量中，结束后另起一行输入刚刚的’任意字符’做结尾即可定界；</p>
+<h3 id="字符串函数strlen"><a href="#字符串函数strlen" class="headerlink" title="字符串函数strlen"></a>字符串函数strlen</h3><p>用于测定一个变量的长度；如：<code>echo strlen($被测变量)</code></p>
 <p><code>mb_strlen($被测字符)</code>可测定宽字符；</p>
-</li>
-<li><h2 id="函数-trim"><a href="#函数-trim" class="headerlink" title="函数 trim"></a>函数 trim</h2><p>删除对象变量两端的字符(如空格、“”等)，可以在后面加<code>charlist：&#39;增加的删除值&#39;</code>，只删右边<code>rtrim</code>,只删左边<code>ltrim</code></p>
+<h3 id="函数-trim"><a href="#函数-trim" class="headerlink" title="函数 trim"></a>函数 trim</h3><p>删除对象变量两端的字符(如空格、“”等)，可以在后面加<code>charlist：&#39;增加的删除值&#39;</code>，只删右边<code>rtrim</code>,只删左边<code>ltrim</code></p>
 <p><code>trim($目标变量,charlist:&#39;增加的删除值&#39;)</code></p>
-</li>
-<li><h2 id="函数stroupper"><a href="#函数stroupper" class="headerlink" title="函数stroupper"></a>函数stroupper</h2><p>全改大写</p>
-</li>
-<li><h2 id="函数ucfirst-amp-ucwords"><a href="#函数ucfirst-amp-ucwords" class="headerlink" title="函数ucfirst&amp;ucwords"></a>函数ucfirst&amp;ucwords</h2><p>把首字母改大写&amp;把每个首字母都大写</p>
-</li>
-<li><h2 id="函数md5"><a href="#函数md5" class="headerlink" title="函数md5"></a>函数md5</h2><p>将目标编译哈希为十六进制32位的不可逆字符串</p>
-</li>
-<li><h2 id="函数explode"><a href="#函数explode" class="headerlink" title="函数explode"></a>函数explode</h2><p>拆分目标，成为数组（也可查明后缀）</p>
-</li>
-<li><h2 id="函数implode"><a href="#函数implode" class="headerlink" title="函数implode"></a>函数implode</h2><p>合成目标</p>
-</li>
-<li><h2 id="函数substr"><a href="#函数substr" class="headerlink" title="函数substr"></a>函数substr</h2><p>截断字符串如`substr($目标,start:起始在第几个，lenghth:结束在第几个)</p>
-</li>
-<li><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）</p>
+<h3 id="函数var-dump"><a href="#函数var-dump" class="headerlink" title="函数var_dump"></a>函数var_dump</h3><p>打印变量的相关信息，常用来进行bool类型的判断</p>
+<h3 id="函数stroupper"><a href="#函数stroupper" class="headerlink" title="函数stroupper"></a>函数stroupper</h3><p>全改大写</p>
+<h3 id="函数ucfirst-amp-ucwords"><a href="#函数ucfirst-amp-ucwords" class="headerlink" title="函数ucfirst&amp;ucwords"></a>函数ucfirst&amp;ucwords</h3><p>把首字母改大写&amp;把每个首字母都大写</p>
+<h3 id="函数md5"><a href="#函数md5" class="headerlink" title="函数md5"></a>函数md5</h3><p>将目标编译哈希为十六进制32位的不可逆字符串</p>
+<h3 id="函数explode"><a href="#函数explode" class="headerlink" title="函数explode"></a>函数explode</h3><p>拆分目标，成为数组（也可查明后缀）</p>
+<h3 id="函数implode"><a href="#函数implode" class="headerlink" title="函数implode"></a>函数implode</h3><p>合成目标</p>
+<h3 id="函数substr"><a href="#函数substr" class="headerlink" title="函数substr"></a>函数substr</h3><p>截断字符串如`substr($目标,start:起始在第几个，lenghth:结束在第几个)</p>
+<h2 id="6-数据类型"><a href="#6-数据类型" class="headerlink" title="6.数据类型"></a>6.数据类型</h2><p>String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）</p>
 <p>与C语言类似</p>
-</li>
-<li><h2 id="PHP-类型比较"><a href="#PHP-类型比较" class="headerlink" title="PHP 类型比较"></a>PHP 类型比较</h2><p>虽然 PHP 是弱类型语言，但也需要明白变量类型及它们的意义，因为我们经常需要对 PHP 变量进行比较，包含松散和严格比较。</p>
+<h2 id="7-PHP-类型比较"><a href="#7-PHP-类型比较" class="headerlink" title="7.PHP 类型比较"></a>7.PHP 类型比较</h2><p>虽然 PHP 是弱类型语言，但也需要明白变量类型及它们的意义，因为我们经常需要对 PHP 变量进行比较，包含松散和严格比较。</p>
 <ul>
 <li>松散比较：使用两个等号 <strong>==</strong> 比较，只比较值，不比较类型。</li>
 <li>严格比较：用三个等号 <strong>===</strong> 比较，除了比较值，也比较类型</li>
 </ul>
-</li>
-<li><h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>常量是一个简单值的标识符。常量值被定义后该值在脚本中不能改变。</p>
+<h2 id="8-常量"><a href="#8-常量" class="headerlink" title="8.常量"></a>8.常量</h2><p>常量是一个简单值的标识符。常量值被定义后该值在脚本中不能改变。</p>
 <p>一个常量由英文字母、下划线、和数字组成,但数字不能作为首字母出现。 (常量名不需要加 $ 修饰符)。</p>
 <p><strong>注意：</strong> 常量在整个脚本中都可以使用。</p>
 <p>设置常量，使用 define() 函数，函数语法如下：</p>
@@ -318,8 +326,7 @@
 <li><strong>value：</strong>必选参数，常量的值。</li>
 <li><strong>case_insensitive</strong> ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。</li>
 </ul>
-</li>
-<li><h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><p>当编写代码时，常常需要为不同的判断执行不同的动作。可以在代码中使用条件语句来完成此任务。</p>
+<h2 id="9-条件语句"><a href="#9-条件语句" class="headerlink" title="9.条件语句"></a>9.条件语句</h2><p>当编写代码时，常常需要为不同的判断执行不同的动作。可以在代码中使用条件语句来完成此任务。</p>
 <p>在 PHP 中，提供了下列条件语句：</p>
 <ul>
 <li><p><strong>if 语句</strong> </p>
@@ -340,8 +347,7 @@
 <p>语法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">switch (n)</span><br><span class="line">&#123;</span><br><span class="line">case label1:</span><br><span class="line">    如果 n=label1，此处代码将执行;</span><br><span class="line">    break;</span><br><span class="line">case label2:</span><br><span class="line">    如果 n=label2，此处代码将执行;</span><br><span class="line">    break;</span><br><span class="line">default:</span><br><span class="line">    如果 n 既不等于 label1 也不等于 label2，此处代码将执行;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><hr>
+<h2 id="10-数组"><a href="#10-数组" class="headerlink" title="10.数组"></a>10.数组</h2><hr>
 <p>数组是一个能在单个变量中存储多个值的特殊变量，并且可以根据键访问其中的值</p>
 <p>在 PHP 中，<code>array() </code>函数用于创建数组：</p>
 <p>在 PHP 中，有三种类型的数组：</p>
@@ -372,8 +378,7 @@
 <li>arsort() - 根据关联数组的值，对数组进行降序排列</li>
 <li>krsort() - 根据关联数组的键，对数组进行降序排列</li>
 </ul>
-</li>
-<li><h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><p>编写代码时，需要让相同的代码块一次又一次地重复运行，在代码中使用循环语句来完成这个任务。</p>
+<h2 id="11-循环语句"><a href="#11-循环语句" class="headerlink" title="11.循环语句"></a>11.循环语句</h2><p>编写代码时，需要让相同的代码块一次又一次地重复运行，在代码中使用循环语句来完成这个任务。</p>
 <p>在 PHP 中，提供了下列循环语句：</p>
 <ul>
 <li><p><strong>while</strong> - 只要指定的条件成立，则循环执行代码块</p>
@@ -405,29 +410,7 @@
 <p>每一次循环，当前数组元素的键与值就都会被赋值给 $key 和 $value 变量（数字指针会逐一地移动），在进行下一次循环时，你将看到数组中的下一个键与值</p>
 </li>
 </ul>
-</li>
-<li><h2 id="创建函数"><a href="#创建函数" class="headerlink" title="创建函数"></a>创建函数</h2><p>函数是通过调用函数来执行的。</p>
-<p>你可以在页面的任何位置调用函数。</p>
-<p><strong>创建语法</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function functionName()</span><br><span class="line">&#123;</span><br><span class="line">    // 要执行的代码</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<p>PHP 函数准则：</p>
-<ul>
-<li>函数的名称应该提示出它的功能</li>
-<li>函数名称以字母或下划线开头（不能以数字开头）</li>
-</ul>
-<p><strong>添加参数</strong></p>
-<p>为了给函数添加更多的功能，我们可以添加参数，参数类似变量。</p>
-<p>参数就在函数名称后面的一个括号内指定。</p>
-<p>实例</p>
-<p>下面的实例将输出不同的名字，但姓是相同的：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function writeName($fname)</span><br><span class="line">&#123;</span><br><span class="line">    echo $fname . &quot; Refsnes.&lt;br&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">echo &quot;My name is &quot;;</span><br><span class="line">writeName(&quot;Kai Jim&quot;);</span><br><span class="line">echo &quot;My sister&#x27;s name is &quot;;</span><br><span class="line">writeName(&quot;Hege&quot;);</span><br><span class="line">echo &quot;My brother&#x27;s name is &quot;;</span><br><span class="line">writeName(&quot;Stale&quot;);</span><br><span class="line">?&gt;</span><br><span class="line">输出</span><br><span class="line">My name is Kai Jim Refsnes.</span><br><span class="line">My sister&#x27;s name is Hege Refsnes.</span><br><span class="line">My brother&#x27;s name is Stale Refsnes.</span><br></pre></td></tr></table></figure>
-
-<p><strong>返回值</strong></p>
-<p>如需让函数返回一个值，请使用 return 语句。</p>
-<p>实例</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function add($x,$y)</span><br><span class="line">&#123;</span><br><span class="line">    $total=$x+$y;</span><br><span class="line">    return $total;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">echo &quot;1 + 16 = &quot; . add(1,16);</span><br><span class="line">?&gt;</span><br><span class="line">输出</span><br><span class="line">1 + 16 = 17</span><br></pre></td></tr></table></figure></li>
-<li><h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p><strong>打开文件</strong></p>
+<h2 id="12-文件"><a href="#12-文件" class="headerlink" title="12.文件"></a>12.文件</h2><p><strong>打开文件</strong></p>
 <p>定义一个参数，使用fopen()函数将目标文件导入</p>
 <p><code>$定义参数=fopen(”目标文件“,&quot;开启类型”);</code></p>
 <table>
@@ -478,8 +461,17 @@
 <p>“全部”……全部（<del>我也不太清楚具体意义</del>）取得文件大小</p>
 <p><strong>关闭文件</strong></p>
 <p>使用函数<code>fclose($被导入的参数);</code>  (一定要打上，<del>不然每刷新一次刚刚的程序就要跑一次</del>)</p>
-</li>
-</ol>
+<p><strong>判断文件权限</strong></p>
+<p>使用函数<code>var_dump(is_权限名able(目标文件));</code> 进行bool的判断</p>
+<p><strong>删除文件</strong></p>
+<p>使用函数<code>unlink(目标文件);</code></p>
+<h2 id="13-文件包含"><a href="#13-文件包含" class="headerlink" title="13.文件包含"></a>13.文件包含</h2><p>将文件引入一个php文件中（在CTF中的应用暂时没有理解，待学习）</p>
+<p>函数<code>include &#39;引入文件的路径&#39;;</code>        函数<code>require &#39;引入文件的路径&#39;;</code></p>
+<p>除了处理错误的方式不同之外，两者在其他方面都是相同的；</p>
+<p>include在错误时，报错，之后的程序可以继续执行（可以通过在前面加上@的方式隐去报错）；</p>
+<p>include_once会检索当前文件是否已被包含，如果已被包含，则不会再次包含</p>
+<p>require在错误时，报错，全部的程序被停止；</p>
+<p>require_once会检索当前文件是否已被包含，如果已被包含，则不会再次包含</p>
 
     </div>
 </article>
@@ -541,6 +533,18 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2021/10/24/web%E5%9F%BA%E7%A1%80/">web基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2021/10/09/php%E5%AD%A6%E4%B9%A0/">php学习</a>
                 </span>
             </li>
@@ -587,19 +591,31 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2021/10/09/php%E5%AD%A6%E4%B9%A0/">php学习</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2021/10/05/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux学习笔记</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/24/web%E5%9F%BA%E7%A1%80/">web基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2021/10/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%9E%E9%AA%8C%E6%9C%BA%EF%BC%89/">我的第一篇博客（实验机）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/10/23/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
                 </span>
             </li>
             
@@ -632,11 +648,15 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD-Linux-%E5%AD%A6%E4%B9%A0/" style="font-size: 11.200861105632px;" class="tag-cloud-link">小白 Linux 学习</a>
+    <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0-php/" style="font-size: 18.718809194586274px;" class="tag-cloud-link">小白 学习 php</a>
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD-%E5%AD%A6%E4%B9%A0/" style="font-size: 16.674741668159815px;" class="tag-cloud-link">小白 学习</a>
+    <a href="/tags/%E5%B0%8F%E7%99%BD-Linux-%E5%AD%A6%E4%B9%A0/" style="font-size: 16.49849420047156px;" class="tag-cloud-link">小白 Linux 学习</a>
     
-    <a href="/tags/%E5%B0%8F%E7%99%BD/" style="font-size: 17.15960966494224px;" class="tag-cloud-link">小白</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%B0%8F%E7%99%BD/" style="font-size: 11.820452692373944px;" class="tag-cloud-link">学习 小白</a>
+    
+    <a href="/tags/%E5%B0%8F%E7%99%BD/" style="font-size: 19.173666536284976px;" class="tag-cloud-link">小白</a>
+    
+    <a href="/tags/php-%E5%AD%A6%E4%B9%A0/" style="font-size: 12.668170729402828px;" class="tag-cloud-link">php 学习</a>
     
 </div>
                 
